@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Life Unsolved</title>
+        <link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css?family=Amatic+SC">
+        <link rel="stylesheet" href="w3.css">
+        <link rel="stylesheet" href="main.css">
+
+    <head>
+        
+<body class=" w3-display-container">
+
+<!Navagation!>   
+<div class="w3-top w3-white w3-bottombar w3-border-black w3-hide-small">
+  <ul class="w3-navbar w3-white w3-displayleft">
+      <li><a class="logo" href="index.html"> <img src="imgaes/logo.jpg" style="width:50px;height:50px;padding-top:20px;"></a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="archive.html">Archive</a></li>
+    <li><a href="donate.html">Donate</a></li>
+    <li><a href="letstalk.html">Let's Talk</a></li>
+        </ul>
+    </div>
+<div class="w3-accordion w3-center w3-hide-large w3-hide-medium" style="margin-bottom:-90px;" >
+        <a onclick="myAccFunc()" href="#"><img src="imgaes/logo.jpg" style="width:50px;height:50px;padding-top:20px;"><i class="fa fa-caret-down"></i></a>
+  <div id="demoAcc" class="w3-accordion-content w3-white w3-card-4">
+    <div class="MNav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="archive.html">Archive</a>
+    <a href="donate.html">Donate</a>
+    <a href="letstalk.html">Let's Talk</a>
+    </div>
+        </div>
+        
+      
+<script>
+function myAccFunc() {
+    var x = document.getElementById("demoAcc");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+        x.previousElementSibling.className += " w3-green";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+        x.previousElementSibling.className = 
+        x.previousElementSibling.className.replace(" w3-green", "");
+    }
+}
+</script>
+      
+  </div>
+  
+  <p class="w3-center w3-content title">Life Unsolved</p>
+
+
+<h1 class="w3-content w3-container">
+	Want to say hey? <br>
+	Got a comment or Question?<br>
+	Let us know!
+</h1>
+        
+<div class="w3-padding w3-content w3-card-4">
+    
+	<form action="send_form_email.php" method="POST">
+Name:<br><input type="text" name="name" placeholder="Life Unsolved" required><br>
+        <br>
+Email:<br><input type="text" name="email" placeholder="example@gmail.com" required><br>
+        <br>
+Comment:<br><textarea rows="5" name="comment" cols="30" required></textarea><br>
+<input type="submit" name="submit" value="Submit">
+    </form>
+    
+</div>
+
+ <!footer!>
+	<div class="w3-hide-small w3-border-top w3-border-grey footer">
+		<div class="w3-row w3-content">
+			<div class="w3-half">
+				<p style="padding-left:100px; margin-top:5px">
+				The Solution is in Him,<br>
+				<a style="text-decoration:none" href="index.html"><div Style="padding-left:100px; margin-top:-20px; font-family: 'Amatic SC', cursive;font-size:22px">Life Unsolved</div></a>
+				</p>
+			</div>
+			<div class="w3-half">
+				<p style="margin-top:5px">Check us out on Facebook<br>
+				<a href="http://www.facebook.com"><img src="imgaes/facebook_icon.jpg" Style="width:25px;height:25px"></a>
+				</p>
+				
+			</div>
+		</div>
+	</div>
+	<div class="w3-hide-medium w3-hide-large w3-border-top w3-border-grey footer">
+		<div class="w3-row w3-content">
+			<div class="w3-half">
+				<p style="padding-left:20px; margin-top:5px">
+				The Solution is in Him,<br>
+				<a style="text-decoration:none" href="index.html"><div Style="padding-left:20px; margin-top:-20px; font-family: 'Amatic SC', cursive;font-size:22px">Life Unsolved</div></a>
+				</p>
+			</div>
+			<div class="w3-half">
+				<p style="padding-left:20px;margin-top:0px; margin-bottom:-5px">Check us out on Facebook<br>
+				<a href="http://www.facebook.com"><img src="imgaes/facebook_icon.jpg" Style="width:25px;height:25px"></a>
+				</p>
+				
+			</div>
+		</div>
+	</div>
+	<div>
+		<p class="w3-center">
+			<a class="bottom_nav" href="index.html">Home</a>
+			<a class="bottom_nav" href="about.html">About</a>
+			<a class="bottom_nav" href="archive.html">Archive</a>
+			<a class="bottom_nav" href="donate.html">Donate</a>
+			<a class="bottom_nav" href="letstalk.html">Let's Talk</a>
+		</p>
+	</div> 
+</body>
+</html>
