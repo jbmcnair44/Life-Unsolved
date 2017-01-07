@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="w3.css">
         <link rel="stylesheet" href="main.css">
 
-    <head>
+    </head>
         
 <body class=" w3-display-container">
 
@@ -65,9 +65,9 @@ function myAccFunc() {
 <div class="w3-padding w3-content w3-card-4">
     
 	<form action="send_form_email.php" method="POST">
-Name:<br><input type="text" name="name" placeholder="Life Unsolved" required><br>
+Name:<br><input type="text" name="name" placeholder="Life Unsolved" pattern="[a-zA-Z0-9 ]+" required><br>
         <br>
-Email:<br><input type="text" name="email" placeholder="example@gmail.com" required><br>
+Email:<br><input type="text" name="email" placeholder="example@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required><br>
         <br>
 Comment:<br><textarea rows="5" name="comment" cols="30" required></textarea><br>
 <input type="submit" name="submit" value="Submit">
